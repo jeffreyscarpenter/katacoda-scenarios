@@ -4,7 +4,7 @@ While there are a number of options available for installing Cassandra on variou
 
 You can unpack the compressed file using any regular ZIP utility. On Unix-based systems such as Linux or macOS, gzip extraction utilities should be preinstalled; You might have to extract the ZIP file and the TAR file in separate steps. 
 
-`tar xzf apache-cassandra-3.11.6-bin.tar.gz`{{execute}}
+`tar xzf apache-cassandra-4.0-alpha3-bin.tar.gz`{{execute}}
 
 Now you have a folder on your filesystem called _apache-cassandra-x.x.x_, you're ready to run Cassandra.
 
