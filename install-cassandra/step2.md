@@ -1,13 +1,13 @@
-Once you decompress the tarball, you'll see that the Cassandra binary distribution includes several files and directories.
+# Investigate the contents
 
-Have a look at these files using the file explorer to the upper right:
+Now let's explore the files under the expanded folder _apache-cassandra-x.x.x_, using the file explorer to the upper right:
  
 * _NEWS.tx_ includes the release notes describing features included in the current and prior releases
 * _CHANGES.txt_ is similar but focuses on bug fixes. You'll want to make sure to review these files whenever you are upgrading to a new version so you know what changes to expect. 
 * _LICENSE.txt_ contains the Apache 2.0 license 
 * _NOTICE.txt_ contains copyright notices for Cassandra and included software
 
-Let's take a moment to look around in the directories and see what's there.
+Next, look around in the directories and see what's there.
 
 * _bin_ - contains the executables to run Cassandra as well as clients, including the query language shell (`cqlsh`). It also has scripts to run the `nodetool`, which is a utility for inspecting a cluster to determine whether it is properly configured, and to perform a variety of maintenance operations. The directory also contains several utilities for performing operations on SSTables, the files in which Cassandra stores its data on disk.
 
