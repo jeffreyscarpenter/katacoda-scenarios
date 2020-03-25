@@ -1,8 +1,8 @@
 {
-  "title": "First Scenario",
-  "description": "This is my first scenario",
+  "title": "Getting Started with Cassandra - Install Cassandra",
+  "description": "Install Cassandra from Zip file, investigate the contents, and start the Cassandra daemon.",
   "difficulty": "Beginner",
-  "time": "2 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
@@ -12,6 +12,10 @@
       {
         "title": "Step 2",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
       }
     ],
     "intro": {
@@ -22,7 +26,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "ubuntu"
