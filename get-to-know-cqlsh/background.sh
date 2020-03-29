@@ -1,13 +1,22 @@
 #!/bin/bash
 
-#echo "export PATH=$JAVA_HOME/bin:$PATH" >>~/.bashrc
+CASSANDRA_VERSION=3.11.6
+
+echo "export CASSANDRA_VERSION=$CASSANDRA_VERSION" >>~/.bashrc
 
 export PATH=$JAVA_HOME/bin:$PATH
 
-wget http://archive.apache.org/dist/cassandra/4.0-alpha3/apache-cassandra-4.0-alpha3-bin.tar.gz
-tar xzf apache-cassandra-4.0-alpha3-bin.tar.gz
-apache-cassandra-4.0-alpha3/bin/cassandra -R
-while [ `grep "Starting listening for CQL clients" apache-cassandra-4.0-alpha3/logs/system.log | wc -l` -lt 1 ]; do
+url="http://archive.apache.org/dist/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz"
+wget $url
+
+filepath="apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz"
+tar xzf $filepath
+
+exepath="apache-cassandra-${CASSANDRA_VERSION}/bin/cassandra -R"
+exec $exepath
+
+logpath="apache-cassandra-${CASSANDRA_VERSION}/logs/system.log"
+while [ `grep "Starting listening for CQL clients" $logpath | wc -l` -lt 1 ]; do
    sleep 15
 done
 
