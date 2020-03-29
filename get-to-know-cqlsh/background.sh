@@ -12,8 +12,7 @@ wget $url
 filepath="apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz"
 tar xzf $filepath
 
-exepath="apache-cassandra-${CASSANDRA_VERSION}/bin/cassandra -R"
-exec $exepath
+apache-cassandra-${CASSANDRA_VERSION}/bin/cassandra -R
 
 logpath="apache-cassandra-${CASSANDRA_VERSION}/logs/system.log"
 while [ `grep "Starting listening for CQL clients" $logpath | wc -l` -lt 1 ]; do
