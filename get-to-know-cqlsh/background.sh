@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH=$JAVA_HOME:$PATH
+export PATH=$JAVA_HOME:$JAVA_HOME/bin:$PATH
 
 wget http://archive.apache.org/dist/cassandra/3.11.6/apache-cassandra-3.11.6-bin.tar.gz
 tar xzf apache-cassandra-3.11.6-bin.tar.gz
