@@ -2,7 +2,7 @@
 
 #echo "export PATH=$JAVA_HOME/bin:$PATH" >>~/.bashrc
 
-#export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
 
 wget http://archive.apache.org/dist/cassandra/4.0-alpha3/apache-cassandra-4.0-alpha3-bin.tar.gz
 tar xzf apache-cassandra-4.0-alpha3-bin.tar.gz
