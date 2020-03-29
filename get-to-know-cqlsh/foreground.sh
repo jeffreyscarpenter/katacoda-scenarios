@@ -27,5 +27,4 @@ show_progress()
 show_progress
 sleep 1
 clear
-cqlshpath="apache-cassandra-${CASSANDRA_VERSION}/bin/cqlsh"
-exec $cqlshpath
+apache-cassandra-${CASSANDRA_VERSION}/bin/cqlsh
