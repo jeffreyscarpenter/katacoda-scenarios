@@ -6,5 +6,6 @@ We've already installed Cassandra on this instance for you and started a running
 
 `./apache-cassandra-4.0-alpha3/bin/cqlsh`{{execute}}
 
+![Reservation domain](assets/reservation-domain.png)
 
 
