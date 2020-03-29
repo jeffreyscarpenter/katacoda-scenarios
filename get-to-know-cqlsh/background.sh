@@ -4,7 +4,7 @@ CASSANDRA_VERSION=3.11.6
 
 echo "export CASSANDRA_VERSION=$CASSANDRA_VERSION" >>~/.bashrc
 
-export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$JAVA_HOME:$PATH
 
 url="http://archive.apache.org/dist/cassandra/${CASSANDRA_VERSION}/apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz"
 wget $url
