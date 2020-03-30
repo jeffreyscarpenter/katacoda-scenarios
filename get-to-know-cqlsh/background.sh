@@ -1,6 +1,9 @@
 #!/bin/bash
 
-export PATH=$JAVA_HOME:$JAVA_HOME/bin:$PATH
+#export PATH=$JAVA_HOME:$JAVA_HOME/bin:$PATH
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+touch ~/.mavenrc
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre" >>~/.mavenrc
 
 wget http://archive.apache.org/dist/cassandra/3.11.6/apache-cassandra-3.11.6-bin.tar.gz
 tar xzf apache-cassandra-3.11.6-bin.tar.gz
